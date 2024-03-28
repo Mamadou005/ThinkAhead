@@ -4,14 +4,14 @@ import java.util.LinkedList;
 
 public class AlignementCases {
     private Orientation orientation;
-    private LinkedList<Case> lesCases;
+    private Case[] lesCases;
     private Integer position;
 
     public Orientation getOrientation() {
         return orientation;
     }
 
-    public LinkedList<Case> getCasesLibre() {
+    public Case[] getCasesLibre() {
         return lesCases;
     }
 
@@ -19,18 +19,18 @@ public class AlignementCases {
         return null;
     }
     public Case getCaseNUm(int num){
-        return lesCases.get(num);
+        return lesCases[num];
     }
 
     public void setOrientation(Orientation orientation) {
         this.orientation = orientation;
     }
 
-    public LinkedList<Case> getLesCases() {
+    public Case[] getLesCases() {
         return lesCases;
     }
 
-    public void setLesCases(LinkedList<Case> lesCases) {
+    public void setLesCases(Case[] lesCases) {
         this.lesCases = lesCases;
     }
 

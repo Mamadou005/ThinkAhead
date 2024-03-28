@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 public class Grille {
     private AlignementCases alignementActif;
-    private LinkedList <Case> lesCases;
+    private Case[] lesCases;
     public void Case(Integer n){
 
     }

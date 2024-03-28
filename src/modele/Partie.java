@@ -5,7 +5,7 @@ import java.util.LinkedList;
 public class Partie {
     private Grille laGrille;
     private Joueur[] joueurs;
-    private LinkedList<Coup> lesCoups;
+    private Coup[] lesCoups;
     private Integer[] score;
 
     public Grille getLaGrille() {
@@ -24,11 +24,11 @@ public class Partie {
         this.joueurs = joueurs;
     }
 
-    public LinkedList<Coup> getLesCoups() {
+    public Coup[] getLesCoups() {
         return lesCoups;
     }
 
-    public void setLesCoups(LinkedList<Coup> lesCoups) {
+    public void setLesCoups(Coup[] lesCoups) {
         this.lesCoups = lesCoups;
     }
 
@@ -40,6 +40,7 @@ public class Partie {
         this.score = score;
     }
     public void commencer(){
+        
     }
     public void ajouterCoup(Coup coup){
 

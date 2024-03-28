@@ -8,7 +8,7 @@ public class Case {
 
         return false;
     }
-
+    
     public Integer getValeur() {
         return valeur;
     }
