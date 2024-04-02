@@ -6,7 +6,7 @@ public class Case {
     private Position position;
     public boolean estLibre(){
 
-        return false;
+        return jouePar == null;
     }
     
     public Integer getValeur() {

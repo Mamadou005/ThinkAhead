@@ -4,6 +4,11 @@ public class Position {
     private Integer pos_x;
     private Integer pos_y;
 
+    public Position(Integer pos_x, Integer pos_y) {
+        this.pos_x = pos_x;
+        this.pos_y = pos_y;
+    }
+
     public Integer getPos_x() {
         return pos_x;
     }

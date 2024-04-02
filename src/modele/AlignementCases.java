@@ -15,11 +15,22 @@ public class AlignementCases {
         return lesCases;
     }
 
+    // Méthode pour obtenir la case libre avec la valeur maximale dans l'alignement
     public Case getCaseLibreValeurMax() {
-        return null;
+        Case caseValeurMax = null;
+        int valeurMax = Integer.MIN_VALUE;
+
+        for (Case uneCase : lesCases) {
+            if (uneCase.estLibre() && uneCase.getValeur() > valeurMax) {
+                caseValeurMax = uneCase;
+                valeurMax = uneCase.getValeur();
+            }
+        }
+
+        return caseValeurMax;
     }
     public Case getCaseNUm(int num){
-        return lesCases[num];
+        return lesCases[num - 1];
     }
 
     public void setOrientation(Orientation orientation) {
